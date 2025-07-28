@@ -1,0 +1,608 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|solutionrelative:crowdfunding.domain\\entities\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.domain\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|solutionrelative:crowdfunding.domain\\entities\\donation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.domain\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|solutionrelative:crowdfunding.domain\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|solutionrelative:crowdfunding.domain\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\donationdto\\donationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\donationdto\\donationcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\projectdto\\projectupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\projectdto\\projectupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\projectdto\\projectcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\projectdto\\projectcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\studentdto\\studentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\studentdto\\studentupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\studentdto\\studentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\studentdto\\studentcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\donationdto\\donationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\donationdto\\donationupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\crowdfunding.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\crowdfunding.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\service\\donationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\service\\donationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\controllers\\proyectoscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\controllers\\proyectoscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\controllers\\estudiantecontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\controllers\\estudiantecontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\controllers\\donacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\controllers\\donacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\donationdto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\donationdto\\donationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.application\\dtos\\projectdto\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}|CrowdFunding.Application\\CrowdFunding.Application.csproj|solutionrelative:crowdfunding.application\\dtos\\projectdto\\projectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\repositories\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\studentsproyectscrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\studentsproyectscrud.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\migrations\\20250612233116_inicial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\migrations\\20250612233116_inicial.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.infestructure\\crowdfunding.infestructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3D867540-C604-429E-901C-51BB88E03477}|CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj|solutionrelative:crowdfunding.infestructure\\crowdfunding.infestructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\crowdfunding.domain\\crowdfunding.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0C35750D-557D-46B1-9405-8259F5824440}|CrowdFunding.Domain\\CrowdFunding.Domain.csproj|solutionrelative:crowdfunding.domain\\crowdfunding.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Infrastructure\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentProyect.Infrastructure\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentProyect.Domain\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Donacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Proyecto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Models\\Donacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StudentProyect.Domain\\Models\\Donacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|c:\\c# proyect\\proyectositla\\studentsproyectscrud\\studentsproyectscrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D65C2263-27E2-4EFD-B207-F372BB8058D7}|StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj|solutionrelative:studentsproyectscrud\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 19,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Domain\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "CrowdFunding.Domain\\Entities\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T17:39:35.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DonationService.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\Service\\DonationService.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\Service\\DonationService.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\Service\\DonationService.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\Service\\DonationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:36:51.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DonationUpdateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationUpdateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationUpdateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationUpdateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:23:09.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DonationCreateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationCreateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationCreateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationCreateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:21:57.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectUpdateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectUpdateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectUpdateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectUpdateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:17:15.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProjectCreateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectCreateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectCreateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectCreateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:16:12.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StudentUpdateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentUpdateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentUpdateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentUpdateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:08:49.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentCreateDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentCreateDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentCreateDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentCreateDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentCreateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T03:06:57.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DonationDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\DonationDto\\DonationDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\DonationDto\\DonationDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T02:53:55.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProjectDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\ProjectDto\\ProjectDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T02:53:35.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "StudentDto.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs",
+              "RelativeToolTip": "CrowdFunding.Application\\DTOs\\StudentDto\\StudentDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T02:53:19.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CrowdFunding.Application.csproj",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+              "RelativeDocumentMoniker": "CrowdFunding.Application\\CrowdFunding.Application.csproj",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+              "RelativeToolTip": "CrowdFunding.Application\\CrowdFunding.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-26T02:52:06.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20250612233116_Inicial.Designer.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Migrations\\20250612233116_Inicial.Designer.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Migrations\\20250612233116_Inicial.Designer.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Migrations\\20250612233116_Inicial.Designer.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Migrations\\20250612233116_Inicial.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T00:35:36.718Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T00:18:51.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CrowdFunding.Domain.csproj",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+              "RelativeDocumentMoniker": "CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+              "RelativeToolTip": "CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-22T16:37:25.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T01:40:50.881Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T01:37:13.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CrowdFunding.Infestructure.csproj",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-18T01:23:49.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Repositories\\Repository.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Repositories\\Repository.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Repositories\\Repository.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Repositories\\Repository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T01:22:55.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Infestructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CrowdFunding.Infestructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA5wBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:59:20.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Domain\\Entities\\Project.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Project.cs",
+              "RelativeToolTip": "CrowdFunding.Domain\\Entities\\Project.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:46:12.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Student.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Domain\\Entities\\Student.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Student.cs",
+              "RelativeToolTip": "CrowdFunding.Domain\\Entities\\Student.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:45:59.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Donation.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Donation.cs",
+              "RelativeDocumentMoniker": "CrowdFunding.Domain\\Entities\\Donation.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\Entities\\Donation.cs",
+              "RelativeToolTip": "CrowdFunding.Domain\\Entities\\Donation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:45:49.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Proyecto.cs",
+              "DocumentMoniker": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Proyecto.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Proyecto.cs",
+              "ToolTip": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Proyecto.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Proyecto.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:34:29.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Estudiante.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Estudiante.cs",
+              "ToolTip": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Estudiante.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Estudiante.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:34:29.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Donacion.cs",
+              "DocumentMoniker": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Donacion.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Donacion.cs",
+              "ToolTip": "C:\\Users\\vnt\\OneDrive\\Desktop\\Models\\Donacion.cs",
+              "RelativeToolTip": "..\\..\\..\\Users\\vnt\\OneDrive\\Desktop\\Models\\Donacion.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-18T00:34:29.474Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Donacion.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Models\\Donacion.cs",
+              "RelativeDocumentMoniker": "StudentProyect.Domain\\Models\\Donacion.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Models\\Donacion.cs",
+              "RelativeToolTip": "StudentProyect.Domain\\Models\\Donacion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:25:29.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Infrastructure\\Class1.cs",
+              "RelativeDocumentMoniker": "StudentProyect.Infrastructure\\Class1.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Infrastructure\\Class1.cs",
+              "RelativeToolTip": "StudentProyect.Infrastructure\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:18:52.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Class1.cs",
+              "RelativeDocumentMoniker": "StudentProyect.Domain\\Class1.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentProyect.Domain\\Class1.cs",
+              "RelativeToolTip": "StudentProyect.Domain\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-17T18:07:36.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\appsettings.Development.json",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\appsettings.Development.json",
+              "RelativeToolTip": "StudentsProyectsCRUD\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T23:15:46.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Program.cs",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\Program.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Program.cs",
+              "RelativeToolTip": "StudentsProyectsCRUD\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T23:08:41.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DonacionesController.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\DonacionesController.cs",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\Controllers\\DonacionesController.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\DonacionesController.cs",
+              "RelativeToolTip": "StudentsProyectsCRUD\\Controllers\\DonacionesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:57:23.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProyectosControllers.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\ProyectosControllers.cs",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\Controllers\\ProyectosControllers.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\ProyectosControllers.cs",
+              "RelativeToolTip": "StudentsProyectsCRUD\\Controllers\\ProyectosControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T22:48:24.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\appsettings.json",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\appsettings.json",
+              "RelativeToolTip": "StudentsProyectsCRUD\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-12T22:14:31.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EstudianteControllers.cs",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\EstudianteControllers.cs",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\Controllers\\EstudianteControllers.cs",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\Controllers\\EstudianteControllers.cs",
+              "RelativeToolTip": "StudentsProyectsCRUD\\Controllers\\EstudianteControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T21:55:09.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "StudentsProyectsCRUD.csproj",
+              "DocumentMoniker": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
+              "RelativeDocumentMoniker": "StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
+              "ToolTip": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
+              "RelativeToolTip": "StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-12T21:48:52.37Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

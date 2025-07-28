@@ -1,0 +1,329 @@
+[
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.DonacionesController",
+    "Method": "GetDonaciones",
+    "RelativePath": "api/Donaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CrowdFunding.Domain.Entities.Donation, CrowdFunding.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.DonacionesController",
+    "Method": "PostDonacion",
+    "RelativePath": "api/Donaciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "donacion",
+        "Type": "CrowdFunding.Domain.Entities.Donation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Donation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.DonacionesController",
+    "Method": "GetDonacion",
+    "RelativePath": "api/Donaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Donation",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.DonacionesController",
+    "Method": "PutDonacion",
+    "RelativePath": "api/Donaciones/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "donacion",
+        "Type": "CrowdFunding.Domain.Entities.Donation",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.DonacionesController",
+    "Method": "DeleteDonacion",
+    "RelativePath": "api/Donaciones/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrowdfundingAPI.Controllers.EstudiantesController",
+    "Method": "Get",
+    "RelativePath": "api/Estudiantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CrowdFunding.Domain.Entities.Student, CrowdFunding.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CrowdfundingAPI.Controllers.EstudiantesController",
+    "Method": "Post",
+    "RelativePath": "api/Estudiantes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estudiante",
+        "Type": "CrowdFunding.Domain.Entities.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CrowdfundingAPI.Controllers.EstudiantesController",
+    "Method": "GetById",
+    "RelativePath": "api/Estudiantes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Student",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CrowdfundingAPI.Controllers.EstudiantesController",
+    "Method": "Put",
+    "RelativePath": "api/Estudiantes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estudiante",
+        "Type": "CrowdFunding.Domain.Entities.Student",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrowdfundingAPI.Controllers.EstudiantesController",
+    "Method": "Delete",
+    "RelativePath": "api/Estudiantes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.ProyectosController",
+    "Method": "GetProyectos",
+    "RelativePath": "api/Proyectos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[CrowdFunding.Domain.Entities.Project, CrowdFunding.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.ProyectosController",
+    "Method": "PostProyecto",
+    "RelativePath": "api/Proyectos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "proyecto",
+        "Type": "CrowdFunding.Domain.Entities.Project",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Project",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.ProyectosController",
+    "Method": "GetProyecto",
+    "RelativePath": "api/Proyectos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CrowdFunding.Domain.Entities.Project",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.ProyectosController",
+    "Method": "PutProyecto",
+    "RelativePath": "api/Proyectos/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "proyecto",
+        "Type": "CrowdFunding.Domain.Entities.Project",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "StudentsProyectsCRUD.Controllers.ProyectosController",
+    "Method": "DeleteProyecto",
+    "RelativePath": "api/Proyectos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
