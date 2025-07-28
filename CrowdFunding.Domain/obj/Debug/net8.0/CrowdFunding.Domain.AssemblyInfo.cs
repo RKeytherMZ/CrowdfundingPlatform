@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrowdFunding.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+530807574fe9d46ee9a6ee038838aadbd29a50e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b36cdcde670b6249382cb77c029dc58d5056ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrowdFunding.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrowdFunding.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

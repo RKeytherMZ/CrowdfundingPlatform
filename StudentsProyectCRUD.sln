@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsProyectsCRUD", "Stu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFunding.Domain", "CrowdFunding.Domain\CrowdFunding.Domain.csproj", "{0C35750D-557D-46B1-9405-8259F5824440}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFunding.Infestructure", "CrowdFunding.Infestructure\CrowdFunding.Infestructure.csproj", "{3D867540-C604-429E-901C-51BB88E03477}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFunding.Infrastructure", "CrowdFunding.Infestructure\CrowdFunding.Infrastructure.csproj", "{3D867540-C604-429E-901C-51BB88E03477}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrowdFunding.Application", "CrowdFunding.Application\CrowdFunding.Application.csproj", "{2C1CE169-9A4E-489B-A301-0EAC6DE4A9DB}"
 EndProject

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {}
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {}
   },
   "projects": {
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+        "projectUniqueName": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
         "projectName": "CrowdFunding.Domain",
-        "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+        "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
         "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-        "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\obj\\",
+        "outputPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

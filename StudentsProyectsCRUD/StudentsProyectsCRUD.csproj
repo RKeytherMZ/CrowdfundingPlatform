@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrowdFunding.Domain\CrowdFunding.Domain.csproj" />
-    <ProjectReference Include="..\CrowdFunding.Infestructure\CrowdFunding.Infestructure.csproj" />
+    <ProjectReference Include="..\CrowdFunding.Infestructure\CrowdFunding.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

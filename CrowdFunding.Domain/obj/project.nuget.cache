@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LrVsNy7TKVw=",
+  "dgSpecHash": "5pVCvGS/QBE=",
   "success": true,
-  "projectFilePath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+  "projectFilePath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\vnt\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\vnt\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

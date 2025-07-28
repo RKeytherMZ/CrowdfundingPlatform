@@ -15,7 +15,7 @@ namespace CrowdFunding.Domain.Entities
             public string? PasswordHash { get; set; }
             public string Institution { get; set; } = string.Empty;
 
-            public ICollection<Project> Proyectos { get; set; } = new List<Project>();
+            public ICollection<Project> Projects { get; set; } = new List<Project>();
 
 
         }

@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace YourProject.Infrastructure.Data;
+namespace CrowdFunding.Infrastructure.Data;
 
 public class ApplicationDbContext : DbContext
 {

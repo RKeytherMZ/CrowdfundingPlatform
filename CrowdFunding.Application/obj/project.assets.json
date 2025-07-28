@@ -1244,7 +1244,7 @@
           "bin/placeholder/CrowdFunding.Domain.dll": {}
         }
       },
-      "CrowdFunding.Infestructure/1.0.0": {
+      "CrowdFunding.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1254,10 +1254,10 @@
           "Microsoft.Extensions.Configuration.Json": "9.0.7"
         },
         "compile": {
-          "bin/placeholder/CrowdFunding.Infestructure.dll": {}
+          "bin/placeholder/CrowdFunding.Infrastructure.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CrowdFunding.Infestructure.dll": {}
+          "bin/placeholder/CrowdFunding.Infrastructure.dll": {}
         }
       },
       "StudentsProyectsCRUD/1.0.0": {
@@ -1265,7 +1265,7 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "CrowdFunding.Domain": "1.0.0",
-          "CrowdFunding.Infestructure": "1.0.0",
+          "CrowdFunding.Infrastructure": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.7",
           "Microsoft.Extensions.Configuration.Binder": "9.0.7",
@@ -3629,10 +3629,10 @@
       "path": "../CrowdFunding.Domain/CrowdFunding.Domain.csproj",
       "msbuildProject": "../CrowdFunding.Domain/CrowdFunding.Domain.csproj"
     },
-    "CrowdFunding.Infestructure/1.0.0": {
+    "CrowdFunding.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../CrowdFunding.Infestructure/CrowdFunding.Infestructure.csproj",
-      "msbuildProject": "../CrowdFunding.Infestructure/CrowdFunding.Infestructure.csproj"
+      "path": "../CrowdFunding.Infestructure/CrowdFunding.Infrastructure.csproj",
+      "msbuildProject": "../CrowdFunding.Infestructure/CrowdFunding.Infrastructure.csproj"
     },
     "StudentsProyectsCRUD/1.0.0": {
       "type": "project",
@@ -3643,7 +3643,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "CrowdFunding.Domain >= 1.0.0",
-      "CrowdFunding.Infestructure >= 1.0.0",
+      "CrowdFunding.Infrastructure >= 1.0.0",
       "StudentsProyectsCRUD >= 1.0.0"
     ]
   },
@@ -3654,11 +3654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+      "projectUniqueName": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
       "projectName": "CrowdFunding.Application",
-      "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+      "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
       "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-      "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\obj\\",
+      "outputPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3679,14 +3679,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
-              "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
+            "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
+              "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
             },
-            "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj": {
-              "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj"
+            "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj": {
+              "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj"
             },
-            "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj": {
-              "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj"
+            "C:\\c# proyect\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj": {
+              "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj"
             }
           }
         }
