@@ -10,7 +10,7 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    // DbSet para cada una de tus entidades
+ 
     public DbSet<Student> Students { get; set; } = null!;
     public DbSet<Project> Projects { get; set; } = null!;
     public DbSet<Donation> Donations { get; set; } = null!;

@@ -14,7 +14,7 @@ namespace CrowdFunding.Application.Utility.ValidationsAttribute
         {
             if (value is DateTime dateTime)
             {
-                var createDto = (CreateProjectDto)validationContext.ObjectInstance;
+                var createDto = (ProjectCreateDto)validationContext.ObjectInstance;
 
                 if (dateTime <= DateTime.UtcNow)
                 {

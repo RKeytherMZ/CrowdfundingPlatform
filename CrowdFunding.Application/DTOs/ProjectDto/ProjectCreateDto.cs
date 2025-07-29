@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CrowdFunding.Application.DTOs.ProjectDto
 {
-    public class CreateProjectDto
+    public class ProjectCreateDto
     {
         [Required(ErrorMessage = "Title is required.")]
         [MaxLength(100, ErrorMessage = "Title cannot exceed 100 characters.")]
@@ -25,8 +25,6 @@ namespace CrowdFunding.Application.DTOs.ProjectDto
         public DateTime StartDate { get; set; }
 
         [Required(ErrorMessage = "End date is required.")]
-        // Usaremos una validación personalizada, que puedes crear en un archivo separado
-        [FutureDate(ErrorMessage = "End date must be in the future and after the start date.")]
         public DateTime EndDate { get; set; }
 
         [Required(ErrorMessage = "Student ID is required.")]

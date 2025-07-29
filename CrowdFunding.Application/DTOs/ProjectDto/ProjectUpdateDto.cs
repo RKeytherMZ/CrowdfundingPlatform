@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CrowdFunding.Application.DTOs.ProjectDto
 {
-    public class UpdateProjectDto
+    public class ProjectUpdateDto
     {
         [MaxLength(100, ErrorMessage = "Title cannot exceed 100 characters.")]
         public string? Title { get; set; } 

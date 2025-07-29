@@ -13,9 +13,9 @@ namespace CrowdFunding.Application.Contract
 
         Task<ProjectDto?> GetProjectByIdAsync(int id);
 
-        Task<ProjectDto> CreateProjectAsync(CreateProjectDto createDto);
+        Task<ProjectDto> CreateProjectAsync(ProjectCreateDto createDto);
 
-        Task UpdateProjectAsync(int id, UpdateProjectDto updateDto);
+        Task UpdateProjectAsync(int id, ProjectUpdateDto updateDto);
 
         Task DeleteProjectAsync(int id);
 

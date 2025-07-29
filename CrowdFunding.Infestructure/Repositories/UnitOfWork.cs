@@ -11,11 +11,9 @@ namespace CrowdFunding.Infrastructure.Repositories
     {
         private readonly ApplicationDbContext _context;
 
-        // Campos privados para almacenar las instancias de los repositorios
-        // Se usa el patrón de inicialización lazy (??=) para crearlos solo si se acceden
         private IStudentRepository? _students;
         private IProjectRepository? _projects;
-        private IGenericRepository<Donation>? _donations; // Usamos el genérico para Donation si no hay métodos específicos
+        private IDonationRepository? _donations; 
 
         public UnitOfWork(ApplicationDbContext context)
         {
@@ -25,7 +23,7 @@ namespace CrowdFunding.Infrastructure.Repositories
         // Propiedades públicas para acceder a los repositorios
         public IStudentRepository Students => _students ??= new StudentRepository(_context);
         public IProjectRepository Projects => _projects ??= new ProjectRepository(_context);
-        public IGenericRepository<Donation> Donations => _donations ??= new GenericRepository<Donation>(_context);
+        public IDonationRepository Donations => _donations ??= new DonationRepository(_context);
 
 
         public async Task<int> CompleteAsync()

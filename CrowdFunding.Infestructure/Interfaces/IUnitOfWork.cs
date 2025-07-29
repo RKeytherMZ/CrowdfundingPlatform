@@ -8,7 +8,7 @@ namespace CrowdFunding.Infrastructure.Interfaces
 
         IStudentRepository Students { get; }
         IProjectRepository Projects { get; }
-        IGenericRepository<Donation> Donations { get; }
+        IDonationRepository Donations { get; }
         Task<int> CompleteAsync();
     }
 }
