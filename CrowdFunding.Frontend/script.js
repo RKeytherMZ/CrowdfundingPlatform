@@ -4,6 +4,7 @@ const API_URL_STUDENTS = "http://localhost:5281/api/Students";
 const API_URL_DONATIONS = "http://localhost:5281/api/Donations";
 
 // Variables para manejar la visibilidad de las secciones
+
 const loginContainer = document.getElementById("login-container");
 const mainContent = document.getElementById("main-content");
 const sectionView = document.getElementById("section-view");
@@ -11,9 +12,48 @@ const loginForm = document.getElementById("login-form");
 
 // Función principal para mostrar la sección correcta
 function showSection(section) {
+    // Limpia el contenido antes de cargar una nueva sección
     sectionView.innerHTML = '';
 
-    if (section === 'projects') {
+    if (section === 'home') {
+        sectionView.innerHTML = `
+            <section id="home-section" class="container">
+                <div class="card home-card">
+                    <h2 class="home-title">Nuestra Misión: Empoderar el Futuro</h2>
+                    <p class="home-intro">
+                        En Éclat Foundation, creemos en el poder de la educación para transformar vidas. Somos una organización sin fines de lucro dedicada a conectar a estudiantes universitarios brillantes con las personas que quieren hacer la diferencia.
+                    </p>
+                    <div class="home-grid">
+                        <div class="home-mission">
+                            <i class="fas fa-graduation-cap home-icon"></i>
+                            <h3>Educación Accesible</h3>
+                            <p>
+                                Facilitamos el acceso a la educación superior financiando proyectos de investigación, tesis y emprendimientos estudiantiles. Creemos que el talento no debería tener barreras económicas.
+                            </p>
+                        </div>
+                        <div class="home-mission">
+                            <i class="fas fa-seedling home-icon"></i>
+                            <h3>Innovación y Crecimiento</h3>
+                            <p>
+                                Ayudamos a los jóvenes a convertir sus ideas en realidad. Cada proyecto de crowdfunding es una oportunidad para que los estudiantes innoven, crezcan y contribuyan al desarrollo de su comunidad.
+                            </p>
+                        </div>
+                        <div class="home-mission">
+                            <i class="fas fa-users home-icon"></i>
+                            <h3>Comunidad y Conexión</h3>
+                            <p>
+                                Construimos un puente entre los futuros líderes y una red global de donantes. Juntos, creamos un ecosistema de apoyo donde la colaboración es la clave del éxito.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="home-cta">
+                        <p>Únete a nuestra causa y ayuda a forjar el futuro de la educación. Explora los proyectos o realiza una donación hoy mismo.</p>
+                        <button onclick="showSection('projects')">Explora Proyectos</button>
+                    </div>
+                </div>
+            </section>
+        `;
+    } else if (section === 'projects') {
         sectionView.innerHTML = `
             <section id="projects-section">
                 <h1>Proyectos de Estudiantes</h1>
@@ -135,13 +175,32 @@ function showSection(section) {
     }
 }
 
+// Lógica de inicio de sesión
+loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    
+    // Aquí se verifica el usuario y la contraseña.
+    // Usamos una contraseña más segura.
+    if (username === "admin" && password === "MyS3cureP@ssword") {
+        loginContainer.style.display = "none";
+        mainContent.style.display = "block";
+        // Mostrar la página de inicio por defecto
+        showSection('home'); 
+    } else {
+        alert("Usuario o contraseña incorrectos.");
+    }
+});
+
+
+
 // Lógica para el login (oculta el login y muestra el contenido principal)
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
-    if (username === "admin" && password === "1234") {
-        alert("¡Acceso concedido!");
+    if (username === "admin" && password === "MyS3cureP@ssword") {
         loginContainer.style.display = "none";
         mainContent.style.display = "block";
         showSection('projects'); // Muestra Proyectos por defecto
@@ -510,53 +569,33 @@ function setupStudentsLogic() {
 
 // Lógica de Donaciones
 function setupDonationsLogic() {
-    // --- Lógica para obtener y mostrar el historial de donaciones ---
     async function fetchDonations() {
-    try {
-        // 1. Obtener todos los proyectos y donaciones de la API
-        const [projectsResponse, donationsResponse] = await Promise.all([
-            fetch(API_URL), // URL para obtener todos los proyectos
-            fetch(API_URL_DONATIONS) // URL para obtener todas las donaciones
-        ]);
-
-        if (!projectsResponse.ok) throw new Error("Error al cargar proyectos.");
-        if (!donationsResponse.ok) throw new Error("Error al cargar donaciones.");
-
-        const projects = await projectsResponse.json();
-        const donations = await donationsResponse.json();
-
-        // 2. Crear un mapa para buscar proyectos por ID
-        const projectsMap = projects.reduce((map, project) => {
-            map[project.id] = project.title;
-            return map;
-        }, {});
-        
-        // 3. Renderizar el historial de donaciones
-        const donationsContainer = document.getElementById("donations-list");
-        if(donationsContainer) {
-            donationsContainer.innerHTML = '';
-            donations.forEach(donation => {
-                // Obtener el nombre del proyecto usando el mapa
-                const projectName = projectsMap[donation.projectId] || "Proyecto Desconocido";
-                
-                const donationElement = document.createElement("div");
-                donationElement.classList.add("donation-card");
-                donationElement.innerHTML = `
-                    <h4>Donación al Proyecto: ${projectName}</h4>
-                    <p><strong>Donante:</strong> ${donation.donorName}</p>
-                    <p><strong>Monto:</strong> $${donation.amount}</p>
-                    <button class="edit-donation-btn" data-id="${donation.id}">Editar</button>
-                    <button class="delete-donation-btn" data-id="${donation.id}">Eliminar</button>
-                `;
-                donationsContainer.appendChild(donationElement);
-            });
+        try {
+            const response = await fetch(API_URL_DONATIONS);
+            if (!response.ok) throw new Error("Error al cargar las donaciones.");
+            const donations = await response.json();
+            
+            const donationsContainer = document.getElementById("donations-list");
+            if(donationsContainer) {
+                donationsContainer.innerHTML = '';
+                donations.forEach(donation => {
+                    const donationElement = document.createElement("div");
+                    donationElement.classList.add("donation-card");
+                    donationElement.innerHTML = `
+                        <h4>Donación al Proyecto ${donation.projectId}</h4>
+                        <p><strong>Donante:</strong> ${donation.donorName}</p>
+                        <p><strong>Monto:</strong> $${donation.amount}</p>
+                        <button class="edit-donation-btn" data-id="${donation.id}">Editar</button>
+                        <button class="delete-donation-btn" data-id="${donation.id}">Eliminar</button>
+                    `;
+                    donationsContainer.appendChild(donationElement);
+                });
+            }
+        } catch (error) {
+            console.error("Error cargando donaciones:", error);
         }
-    } catch (error) {
-        console.error("Error cargando datos para el historial de donaciones:", error);
     }
-}
-    
-    // --- Lógica para listar los proyectos  ---
+
     async function listProjectsForDonation() {
         try {
             const response = await fetch(API_URL);
@@ -578,7 +617,7 @@ function setupDonationsLogic() {
                     `;
                     projectsContainer.appendChild(projectElement);
                 });
-                
+
                 projectsContainer.addEventListener("click", (event) => {
                     if (event.target.classList.contains("donate-btn")) {
                         const projectId = event.target.dataset.id;
@@ -590,8 +629,7 @@ function setupDonationsLogic() {
             console.error("Error listando proyectos para donación:", error);
         }
     }
-
-    // --- Lógica para el formulario de donación (Crear/Editar) ---
+    
     const donateForm = document.getElementById("donate-form");
     if(donateForm) {
         donateForm.addEventListener("submit", async (event) => {
@@ -643,7 +681,6 @@ function setupDonationsLogic() {
         });
     }
 
-    // --- Lógica para manejar clics de eliminar/editar en el historial de donaciones ---
     const donationsContainer = document.getElementById("donations-list");
     if(donationsContainer) {
         donationsContainer.addEventListener("click", async (event) => {
@@ -676,6 +713,7 @@ function setupDonationsLogic() {
 
                     donateForm.dataset.editingId = donationId;
                     document.querySelector("#donate-form button").textContent = "Actualizar Donación";
+
                 } catch (error) {
                     console.error("Error al cargar datos para edición:", error);
                     alert(`Error: ${error.message}`);
@@ -683,9 +721,8 @@ function setupDonationsLogic() {
             }
         });
     }
-    
-    // --- Llamadas iniciales para cargar la interfaz ---
-    // Estas llamadas deben ejecutarse SIEMPRE al entrar a la sección.
+
     listProjectsForDonation();
     fetchDonations();
 }
+

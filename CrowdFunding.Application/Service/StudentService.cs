@@ -70,14 +70,14 @@ namespace CrowdFunding.Application.Service
 
         public async Task DeleteStudentAsync(int id)
         {
-            // Obtienes el estudiante que quieres eliminar
+            
             var existingStudent = await _unitOfWork.Students.GetByIdAsync(id);
             if (existingStudent == null)
             {
                 throw new KeyNotFoundException("Estudiante no encontrado.");
             }
 
-            // Le pasas la entidad completa a tu repositorio para que la elimine
+            
             _unitOfWork.Students.Delete(existingStudent);
             await _unitOfWork.CompleteAsync();
         }

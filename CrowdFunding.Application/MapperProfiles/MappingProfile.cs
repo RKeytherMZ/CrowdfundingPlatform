@@ -11,8 +11,7 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        // Mapeos para Project
-        // Mapeo explícito para la relación N:N
+      
         CreateMap<Project, ProjectDto>()
             .ForMember(dest => dest.Students, opt => opt.MapFrom(src => src.Students));
 

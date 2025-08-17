@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CrowdFunding App</title>
+    <title>Éclat Foundation</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div id="login-container">
@@ -16,7 +17,7 @@
             </div>
             <div>
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" required autocomplete="off">
             </div>
             <button type="submit">Entrar</button>
         </form>
@@ -27,6 +28,7 @@
         <header>
             <nav class="navbar">
                 <ul class="nav-list">
+                    <li class="nav-item"><a href="#" onclick="showSection('home')">Inicio</a></li>
                     <li class="nav-item"><a href="#" onclick="showSection('projects')">Proyectos</a></li>
                     <li class="nav-item"><a href="#" onclick="showSection('students')">Estudiantes</a></li>
                     <li class="nav-item"><a href="#" onclick="showSection('donations')">Donaciones</a></li>
@@ -35,13 +37,151 @@
         </header>
 
         <main id="section-view">
-            </main>
-
+            <section id="home-section" class="container" style="display: none;">
+                <div class="card home-card">
+                    <h2 class="home-title">Nuestra Misión: Empoderar el Futuro</h2>
+                    <p class="home-intro">
+                        En **Éclat Foundation**, creemos en el poder de la educación para transformar vidas. Somos una organización sin fines de lucro dedicada a conectar a estudiantes universitarios brillantes con las personas que quieren hacer la diferencia.
+                    </p>
+                    <div class="home-grid">
+                        <div class="home-mission">
+                            <i class="fas fa-graduation-cap home-icon"></i>
+                            <h3>Educación Accesible</h3>
+                            <p>
+                                Facilitamos el acceso a la educación superior financiando proyectos de investigación, tesis y emprendimientos estudiantiles. Creemos que el talento no debería tener barreras económicas.
+                            </p>
+                        </div>
+                        <div class="home-mission">
+                            <i class="fas fa-seedling home-icon"></i>
+                            <h3>Innovación y Crecimiento</h3>
+                            <p>
+                                Ayudamos a los jóvenes a convertir sus ideas en realidad. Cada proyecto de crowdfunding es una oportunidad para que los estudiantes innoven, crezcan y contribuyan al desarrollo de su comunidad.
+                            </p>
+                        </div>
+                        <div class="home-mission">
+                            <i class="fas fa-users home-icon"></i>
+                            <h3>Comunidad y Conexión</h3>
+                            <p>
+                                Construimos un puente entre los futuros líderes y una red global de donantes. Juntos, creamos un ecosistema de apoyo donde la colaboración es la clave del éxito.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="home-cta">
+                        <p>Únete a nuestra causa y ayuda a forjar el futuro de la educación. Explora los proyectos o realiza una donación hoy mismo.</p>
+                        <button onclick="showSection('projects')">Explora Proyectos</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="projects-section" style="display: none;">
+                <h1>Proyectos de Estudiantes</h1>
+                <div id="projects-container"></div>
+                <div class="form-container">
+                    <h2>Crear Nuevo Proyecto</h2>
+                    <form id="create-project-form">
+                        <div>
+                            <label for="title">Título:</label>
+                            <input type="text" id="title" name="title" required>
+                        </div>
+                        <div>
+                            <label for="description">Descripción:</label>
+                            <textarea id="description" name="description" required></textarea>
+                        </div>
+                        <div>
+                            <label for="fundingGoal">Meta de Financiamiento:</label>
+                            <input type="number" id="fundingGoal" name="fundingGoal" step="0.01" required>
+                        </div>
+                        <div>
+                            <label for="startDate">Fecha de Inicio:</label>
+                            <input type="date" id="startDate" name="startDate" required>
+                        </div>
+                        <div>
+                            <label for="endDate">Fecha de Fin:</label>
+                            <input type="date" id="endDate" name="endDate" required>
+                        </div>
+                        <div>
+                            <label for="studentIds">IDs de Estudiantes (separados por comas):</label>
+                            <input type="text" id="studentIds" name="studentIds">
+                        </div>
+                        <div>
+                            <label for="status">Estado:</label>
+                            <select id="status" name="status">
+                                <option value="Active">Activo</option>
+                                <option value="Completed">Completado</option>
+                                <option value="Closed">Cerrado</option>
+                                <option value="Canceled">Cancelado</option>
+                            </select>
+                        </div>
+                        <button type="submit">Crear Proyecto</button>
+                    </form>
+                </div>
+            </section>
+            
+            <section id="students-section" style="display: none;">
+                <h1>Gestión de Estudiantes</h1>
+                <div id="students-container"></div>
+                <div class="form-container">
+                    <h2>Crear Nuevo Estudiante</h2>
+                    <form id="create-student-form">
+                        <div>
+                            <label for="studentName">Nombre:</label>
+                            <input type="text" id="studentName" name="name" required>
+                        </div>
+                        <div>
+                            <label for="studentLastName">Apellido:</label>
+                            <input type="text" id="studentLastName" name="lastName" required>
+                        </div>
+                        <div>
+                            <label for="studentEmail">Email:</label>
+                            <input type="email" id="studentEmail" name="email" required>
+                        </div>
+                        <div>
+                            <label for="studentBio">Biografía:</label>
+                            <textarea id="studentBio" name="bio" required></textarea>
+                        </div>
+                        <div>
+                            <label for="studentAge">Edad:</label>
+                            <input type="number" id="studentAge" name="age" required>
+                        </div>
+                        <div>
+                            <label for="studentInstitution">Institución:</label>
+                            <input type="text" id="studentInstitution" name="institution" required>
+                        </div>
+                        <button type="submit">Crear Estudiante</button>
+                    </form>
+                </div>
+            </section>
+            
+            <section id="donations-section" style="display: none;">
+                <h1>Realizar una Donación</h1>
+                <div class="form-container">
+                    <h2>Formulario de Donación</h2>
+                    <form id="donate-form">
+                        <div>
+                            <label for="projectId">ID del Proyecto:</label>
+                            <input type="number" id="projectId" name="projectId" required readonly>
+                        </div>
+                        <div>
+                            <label for="donorName">Tu Nombre:</label>
+                            <input type="text" id="donorName" name="donorName" required>
+                        </div>
+                        <div>
+                            <label for="amount">Monto de la Donación:</label>
+                            <input type="number" id="amount" name="amount" step="0.01" required>
+                        </div>
+                        <button type="submit">Donar Ahora</button>
+                    </form>
+                </div>
+                <hr>
+                <h2>Proyectos Disponibles</h2>
+                <div id="projects-to-donate"></div>
+                <hr>
+                <h2>Historial de Donaciones</h2>
+                <div id="donations-list"></div>
+            </section>
+        </main>
     </div>
     
     <script src="script.js"></script>
 </body>
 </html>
-
-
-

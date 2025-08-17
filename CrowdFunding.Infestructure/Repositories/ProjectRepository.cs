@@ -23,7 +23,7 @@ namespace CrowdFunding.Infrastructure.Repositories
 
             return await _dbSet
             .Where(p => p.Status == "Active" && p.EndDate >= DateTime.UtcNow)
-            .Include(p => p.Students) // 🔹 incluimos la colección de estudiantes
+            .Include(p => p.Students) 
             .OrderByDescending(p => p.CreatedAt)
             .ToListAsync();
         }

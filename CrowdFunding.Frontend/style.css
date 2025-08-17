@@ -1,0 +1,193 @@
+/* Importar fuentes modernas con personalidad */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
+/* Variables CSS */
+:root {
+    --bg-color: #f4f6f9;            /* Fondo suave y limpio */
+    --card-bg: #ffffff;             /* Blanco puro para tarjetas */
+    --text-color: #333d47;          /* Gris oscuro para el texto principal */
+    --accent-color: #20c997;        /* Verde menta vibrante para dar chispa */
+    --accent-hover: #17a2b8;        /* Azul turquesa para el hover */
+    --danger-color: #dc3545;        /* Rojo para eliminar */
+    --border-radius: 12px;
+    --transition-speed: 0.4s;
+}
+
+/* Estilos globales y reseteo */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 2.5rem; /* Espaciado generoso en el borde del cuerpo */
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Tipografía y títulos */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: var(--text-color);
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    gap: 3rem; /* Espaciado entre los elementos del menú */
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    padding-bottom: 8px;
+    transition: color var(--transition-speed);
+}
+
+/* Efecto de 'chispa' con un borde inferior animado */
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: width var(--transition-speed) ease-in-out;
+}
+
+nav a:hover, nav a.active {
+    color: var(--accent-color);
+}
+
+nav a:hover::after, nav a.active::after {
+    width: 100%;
+}
+
+/* Contenedores de formularios y tarjetas */
+.form-container, .card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.card:hover, .form-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Formularios */
+form div {
+    margin-bottom: 2rem;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e9ecef;
+    border-radius: var(--border-radius);
+    font-family: inherit;
+    transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(32, 201, 151, 0.2);
+}
+
+/* Botones */
+button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--accent-color);
+    color: var(--card-bg);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.delete-btn {
+    background-color: var(--danger-color);
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+/* Tarjetas */
+#projects-container, #students-container, #donations-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2.5rem; /* Aumenta el espacio entre las tarjetas */
+}
+
+.project-card, .student-card, .donation-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e9ecef;
+    border-left: 5px solid var(--accent-color); /* Borde lateral para un toque de color */
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

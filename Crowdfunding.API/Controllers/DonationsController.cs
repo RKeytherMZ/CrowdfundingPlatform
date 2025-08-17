@@ -56,11 +56,11 @@ namespace StudentsProyectsCRUD.Controllers
         {
             var donations = await _donationService.GetAllDonationsAsync();
 
-            // Si la lista de donaciones está vacía, puedes devolver un Ok vacío o un NotFound.
+           
             if (donations == null || !donations.Any())
             {
                 return Ok(new List<DonationDto>());
-                // o return NotFound("No se encontraron donaciones.");
+              
             }
 
             return Ok(donations);
