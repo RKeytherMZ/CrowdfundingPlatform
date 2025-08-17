@@ -10,5 +10,6 @@ namespace CrowdFunding.Infrastructure.Interfaces
     public interface IDonationRepository : IGenericRepository<Donation>
     {
         Task<IEnumerable<Donation>> GetDonationsByStudentProjectIdAsync(int studentProjectId);
+        Task<IEnumerable<Donation>> GetAllAsync();
     }
 }

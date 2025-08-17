@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrowdFunding App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-container">
+        <h1>Iniciar Sesión</h1>
+        <form id="login-form">
+            <div>
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div>
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <div id="main-content" style="display: none;">
+        
+        <header>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#" onclick="showSection('projects')">Proyectos</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('students')">Estudiantes</a></li>
+                    <li class="nav-item"><a href="#" onclick="showSection('donations')">Donaciones</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="section-view">
+            </main>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

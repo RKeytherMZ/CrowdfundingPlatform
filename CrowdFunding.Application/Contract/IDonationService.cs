@@ -12,5 +12,11 @@ namespace CrowdFunding.Application.Contract
         Task<DonationDto> CreateDonationAsync(DonationCreateDto createDto);
 
         Task<IEnumerable<DonationDto>> GetDonationsByProjectIdAsync(int projectId);
+
+        Task<IEnumerable<DonationDto>> GetAllDonationsAsync();
+
+        Task UpdateDonationAsync(int id, DonationUpdateDTO updateDto);
+
+        Task DeleteDonationAsync(int id);
     }
 }

@@ -9,7 +9,7 @@ using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// === 1. Configuración de Servicios ===
+
 
 // Servicio para los controladores de la API
 builder.Services.AddControllers();
@@ -38,6 +38,18 @@ builder.Services.AddScoped<IProjectService, ProjectService>();
 builder.Services.AddScoped<IDonationService, DonationService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
+
 // === 2. Configuración de la Aplicación (Middleware) ===
 
 var app = builder.Build();
@@ -48,6 +60,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+
+app.UseCors("AllowAll");
 
 // Middleware para HTTPS
 app.UseHttpsRedirection();

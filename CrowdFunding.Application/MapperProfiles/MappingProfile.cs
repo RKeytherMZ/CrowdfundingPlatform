@@ -24,10 +24,11 @@ public class MappingProfile : Profile
         // Mapeos para Donation
         CreateMap<Donation, DonationDto>().ReverseMap();
         CreateMap<DonationCreateDto, Donation>();
+        CreateMap<DonationUpdateDTO, Donation>();
 
         // Mapeos para Student
         CreateMap<Student, StudentDTO>().ReverseMap();
         CreateMap<StudentCreateDto, Student>();
-
+        CreateMap<StudentUpdateDto, Student>();
     }
 }

@@ -18,5 +18,16 @@ namespace CrowdFunding.Infrastructure.Repositories
                                .OrderByDescending(d => d.DonationDate)
                                .ToListAsync();
         }
+
+        public async Task<IEnumerable<Donation>> GetAllAsync()
+        {
+            return await _context.Donations
+                                 .Include(d => d.Project) 
+                                 .ToListAsync();
+        }
+
+
     }
+
+
 }
