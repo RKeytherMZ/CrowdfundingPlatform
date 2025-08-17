@@ -8,7 +8,7 @@ namespace CrowdFunding.Infrastructure.Repositories
 {
     public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
-        public StudentRepository(ApplicationDbContext context) : base(context)
+        public StudentRepository(AppDbContext context) : base(context)
         {
         }
 
@@ -19,9 +19,13 @@ namespace CrowdFunding.Infrastructure.Repositories
 
         public async Task<Student?> GetStudentWithProjectsAsync(int studentId)
         {
-            // Incluye la colección de proyectos cuando recuperas al estudiante
+           
             return await _dbSet.Include(s => s.Projects)
                                .FirstOrDefaultAsync(s => s.Id == studentId);
+        }
+        public override void Delete(Student student)
+        {
+            _context.Students.Remove(student);
         }
     }
 }

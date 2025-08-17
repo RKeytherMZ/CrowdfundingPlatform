@@ -34,19 +34,24 @@ namespace CrowdFunding.Application.Service
 
         public async Task<ProjectDto> CreateProjectAsync(ProjectCreateDto createDto)
         {
-           
-            var student = await _unitOfWork.Students.GetByIdAsync(createDto.StudentId);
-            if (student == null)
-            {
-                throw new ArgumentException($"Student with ID {createDto.StudentId} not found. Cannot create project.");
-            }
 
-       
             var project = _mapper.Map<Project>(createDto);
 
-            await _unitOfWork.Projects.AddAsync(project);
-            await _unitOfWork.CompleteAsync(); 
 
+            foreach (var studentId in createDto.StudentIds)
+            {
+
+                var student = await _unitOfWork.Students.GetByIdAsync(studentId);
+
+ 
+                if (student != null)
+                {
+
+                    project.Students.Add(student);
+                }
+            }
+            await _unitOfWork.Projects.AddAsync(project);
+            await _unitOfWork.CompleteAsync();
             return _mapper.Map<ProjectDto>(project);
         }
 

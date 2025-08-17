@@ -8,7 +8,7 @@ namespace CrowdFunding.Infrastructure.Repositories
 {
     public class DonationRepository : GenericRepository<Donation>, IDonationRepository
     {
-        public DonationRepository(ApplicationDbContext context) : base(context)
+        public DonationRepository(AppDbContext context) : base(context)
         {
         }
 

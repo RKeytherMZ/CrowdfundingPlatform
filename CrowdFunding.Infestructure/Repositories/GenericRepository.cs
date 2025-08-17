@@ -9,10 +9,10 @@ namespace CrowdFunding.Infrastructure.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
-        protected readonly ApplicationDbContext _context;
+        protected readonly AppDbContext _context;
         protected readonly DbSet<T> _dbSet; 
 
-        public GenericRepository(ApplicationDbContext context)
+        public GenericRepository(AppDbContext context)
         {
             _context = context;
             _dbSet = context.Set<T>(); 
@@ -45,7 +45,7 @@ namespace CrowdFunding.Infrastructure.Repositories
          
         }
 
-        public void Delete(T entity)
+        public virtual void Delete(T entity)
         {
             _dbSet.Remove(entity);
         }
@@ -59,5 +59,6 @@ namespace CrowdFunding.Infrastructure.Repositories
         {
             _dbSet.RemoveRange(entities);
         }
+
     }
 }

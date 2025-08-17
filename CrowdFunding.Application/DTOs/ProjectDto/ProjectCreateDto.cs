@@ -28,7 +28,7 @@ namespace CrowdFunding.Application.DTOs.ProjectDto
         public DateTime EndDate { get; set; }
 
         [Required(ErrorMessage = "Student ID is required.")]
-        public int StudentId { get; set; }
+        public List<int> StudentIds { get; set; }
     }
 
 

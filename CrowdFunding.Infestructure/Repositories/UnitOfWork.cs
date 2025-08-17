@@ -9,13 +9,13 @@ namespace CrowdFunding.Infrastructure.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext _context;
 
         private IStudentRepository? _students;
         private IProjectRepository? _projects;
         private IDonationRepository? _donations; 
 
-        public UnitOfWork(ApplicationDbContext context)
+        public UnitOfWork(AppDbContext context)
         {
             _context = context;
         }

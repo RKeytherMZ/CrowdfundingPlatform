@@ -12,16 +12,21 @@ public class MappingProfile : Profile
     public MappingProfile()
     {
         // Mapeos para Project
-        CreateMap<Project, ProjectDto>().ReverseMap(); 
-        CreateMap<ProjectCreateDto, Project>(); 
-        CreateMap<ProjectUpdateDto, Project>(); 
+        // Mapeo explícito para la relación N:N
+        CreateMap<Project, ProjectDto>()
+            .ForMember(dest => dest.Students, opt => opt.MapFrom(src => src.Students));
+
+        CreateMap<ProjectDto, Project>(); // Este es el .ReverseMap() de forma explícita
+
+        CreateMap<ProjectCreateDto, Project>();
+        CreateMap<ProjectUpdateDto, Project>();
 
         // Mapeos para Donation
         CreateMap<Donation, DonationDto>().ReverseMap();
         CreateMap<DonationCreateDto, Donation>();
 
         // Mapeos para Student
-        CreateMap<Student, StudentDto>().ReverseMap();
+        CreateMap<Student, StudentDTO>().ReverseMap();
         CreateMap<StudentCreateDto, Student>();
 
     }

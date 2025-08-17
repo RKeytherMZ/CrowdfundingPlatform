@@ -13,13 +13,21 @@ namespace CrowdFunding.Application.DTOs.StudentDto
         [MaxLength(100)]
         public string Name { get; set; } = string.Empty;
 
+        [Required(ErrorMessage = "Lastname is required.")]
+        public string LastName { get; set; } = string.Empty;
+
         [Required(ErrorMessage = "Email is required.")]
         [EmailAddress(ErrorMessage = "Invalid email format.")]
         public string Email { get; set; } = string.Empty;
 
-        [Required(ErrorMessage = "Password is required.")]
-        [MinLength(6, ErrorMessage = "Password must be at least 6 characters long.")]
-        public string Password { get; set; } = string.Empty;
+        public string Bio { get; set; } = string.Empty;
+
+        [Required(ErrorMessage = "Age is required.")]
+        public int Age { get; set; }
+
+        [Required(ErrorMessage = "Institution is required.")]
+        [MaxLength(100)]
+        public string Institution { get; set; } = string.Empty;
 
 
     }

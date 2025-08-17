@@ -9,9 +9,13 @@ namespace CrowdFunding.Application.Contract
 {
     public interface IStudentService
     {
-        Task<IEnumerable<StudentDto>> GetAllStudentsAsync();
-        Task<StudentDto?> GetStudentByIdAsync(int id);
-        Task<StudentDto> CreateStudentAsync(StudentCreateDto createDto);
+        Task<IEnumerable<StudentDTO>> GetAllStudentsAsync();
+        Task<StudentDTO?> GetStudentByIdAsync(int id);
+        Task<StudentDTO> CreateStudentAsync(StudentCreateDto createDto);
+
+        Task UpdateStudentAsync(int id, StudentUpdateDto updateDto);
+
+        Task DeleteStudentAsync(int id);
 
     }
 }
