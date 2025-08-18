@@ -2,15 +2,15 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace YourProject.Infrastructure.Data;
+namespace CrowdFunding.Infrastructure.Data;
 
-public class ApplicationDbContext : DbContext
+public class AppDbContext : DbContext
 {
-    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
     {
     }
 
-    // DbSet para cada una de tus entidades
+ 
     public DbSet<Student> Students { get; set; } = null!;
     public DbSet<Project> Projects { get; set; } = null!;
     public DbSet<Donation> Donations { get; set; } = null!;
@@ -24,12 +24,6 @@ public class ApplicationDbContext : DbContext
         {
             entity.Property(e => e.FundingGoal).HasColumnType("decimal(18,2)"); 
             entity.Property(e => e.AmountRaised).HasColumnType("decimal(18,2)");
-            entity.HasOne(p => p.Student) 
-                  .WithMany(s => s.Projects) 
-                  .HasForeignKey(p => p.StudentId)
-                  .OnDelete(DeleteBehavior.Restrict); 
-
-            
             entity.Property(e => e.Status)
                   .HasMaxLength(50)
                   .IsRequired();
@@ -50,8 +44,21 @@ public class ApplicationDbContext : DbContext
             entity.HasIndex(e => e.Email).IsUnique(); 
             entity.Property(e => e.Name).HasMaxLength(100).IsRequired();
             entity.Property(e => e.Email).HasMaxLength(255).IsRequired();
-            entity.Property(e => e.PasswordHash).HasMaxLength(255); 
+            entity.Property(e => e.LastName).HasMaxLength(100).IsRequired();
+            entity.Property(e => e.Age).IsRequired();
+            entity.Property(e => e.Institution).HasMaxLength(100);
+            entity.Property(e => e.Bio).HasMaxLength(500);
+
         });
+
+        modelBuilder.Entity<Student>()
+       .HasMany(s => s.Projects)
+       .WithMany(p => p.Students)
+       .UsingEntity<Dictionary<string, object>>(
+           "StudentProjects", // nombre de la tabla intermedia
+           j => j.HasOne<Project>().WithMany().HasForeignKey("ProjectId"),
+           j => j.HasOne<Student>().WithMany().HasForeignKey("StudentId")
+       );
 
 
     }

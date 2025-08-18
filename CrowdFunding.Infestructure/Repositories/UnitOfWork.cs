@@ -1,8 +1,9 @@
-﻿using CrowdFunding.Domain.Entities;
-
-using CrowdFunding.Infrastructure.Data;
+﻿using System;
+using CrowdFunding.Domain.Entities;
 using CrowdFunding.Infrastructure.Interfaces;
-using StudentsProyectsCRUD.Data;
+using CrowdFunding.Infrastructure.Data;
+
+
 
 namespace CrowdFunding.Infrastructure.Repositories
 {
@@ -10,20 +11,30 @@ namespace CrowdFunding.Infrastructure.Repositories
     {
         private readonly AppDbContext _context;
 
-        public Repository<Student> Students { get; }
-        public Repository<Donation> Donations { get; }
-        public Repository<Project> Projects { get; }
+        private IStudentRepository? _students;
+        private IProjectRepository? _projects;
+        private IDonationRepository? _donations; 
 
         public UnitOfWork(AppDbContext context)
         {
             _context = context;
-            Students = new Repository<Student>(_context);
-            Donations = new Repository<Donation>(_context);
-            Projects = new Repository<Project>(_context);
         }
 
-        public async Task<int> SaveAsync() => await _context.SaveChangesAsync();
+        // Propiedades públicas para acceder a los repositorios
+        public IStudentRepository Students => _students ??= new StudentRepository(_context);
+        public IProjectRepository Projects => _projects ??= new ProjectRepository(_context);
+        public IDonationRepository Donations => _donations ??= new DonationRepository(_context);
 
-        public void Dispose() => _context.Dispose();
+
+        public async Task<int> CompleteAsync()
+        {
+            return await _context.SaveChangesAsync(); 
+        }
+
+        public void Dispose()
+        {
+            _context.Dispose(); 
+            GC.SuppressFinalize(this); 
+        }
     }
 }

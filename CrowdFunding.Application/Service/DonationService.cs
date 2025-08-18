@@ -1,95 +1,119 @@
-﻿using CrowdFunding.Domain.Entities;
-using CrowdFunding.Infrastructure.Data;
-using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using System.Collections.Generic;
+using AutoMapper;
+using CrowdFunding.Application.Contract;
+using CrowdFunding.Application.DTOs.DonationDto;
+using CrowdFunding.Domain.Entities;
+using CrowdFunding.Infrastructure.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using StudentsProyectsCRUD.Controllers;
 
-private readonly AppDbContext _context;
-
-public DonacionesController(AppDbContext context)
+namespace CrowdFunding.Application.Service
 {
-    _context = context;
-}
-
-
-[HttpGet]
-public async Task<ActionResult<IEnumerable<Donation>>> GetDonaciones()
-{
-    return await _context.Donations.Include(d => d.Proyecto).ToListAsync();
-}
-
-
-[HttpGet("{id}")]
-public async Task<ActionResult<Donation>> GetDonacion(int id)
-{
-    var donacion = await _context.Donations.Include(d => d.Proyecto)
-                                            .FirstOrDefaultAsync(d => d.Id == id);
-
-    if (donacion == null)
+    public class DonationService : IDonationService
     {
-        return NotFound();
-    }
+        private readonly IUnitOfWork _unitOfWork;
+        private readonly IMapper _mapper;
 
-    return donacion;
-}
-
-
-[HttpPost]
-public async Task<ActionResult<Donation>> PostDonacion(Donation donacion)
-{
-    _context.Donations.Add(donacion);
-    await _context.SaveChangesAsync();
-
-    return CreatedAtAction("GetDonacion", new { id = donacion.Id }, donacion);
-}
-
-
-[HttpPut("{id}")]
-public async Task<IActionResult> PutDonacion(int id, Donation donacion)
-{
-    if (id != donacion.Id)
-    {
-        return BadRequest();
-    }
-
-    _context.Entry(donacion).State = EntityState.Modified;
-
-    try
-    {
-        await _context.SaveChangesAsync();
-    }
-    catch (DbUpdateConcurrencyException)
-    {
-        if (!DonacionExists(id))
+        public DonationService(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            return NotFound();
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
-        else
+
+        public async Task<DonationDto> CreateDonationAsync(DonationCreateDto createDto)
         {
-            throw;
+
+            var project = await _unitOfWork.Projects.GetByIdAsync(createDto.ProjectId);
+            if (project == null)
+            {
+                throw new KeyNotFoundException($"Project with ID {createDto.ProjectId} not found for donation.");
+            }
+
+            var donation = _mapper.Map<Donation>(createDto);
+
+            project.ReceiveDonation(donation.Amount);
+
+            await _unitOfWork.Donations.AddAsync(donation);
+
+            _unitOfWork.Projects.Update(project);
+
+            await _unitOfWork.CompleteAsync();
+
+            return _mapper.Map<DonationDto>(donation);
+        }
+
+        public async Task<IEnumerable<DonationDto>> GetDonationsByProjectIdAsync(int projectId)
+        {
+            var donations = await _unitOfWork.Donations.GetDonationsByStudentProjectIdAsync(projectId); // Usa el método específico del repositorio
+            return _mapper.Map<IEnumerable<DonationDto>>(donations);
+        }
+
+        
+        public async Task<IEnumerable<DonationDto>> GetAllDonationsAsync()
+        {
+            // Llama al nuevo método GetAllAsync() en el repositorio
+            var donations = await _unitOfWork.Donations.GetAllAsync();
+
+            // Mapea el resultado a un DTO y lo devuelve
+            return _mapper.Map<IEnumerable<DonationDto>>(donations);
+        }
+
+
+        public async Task UpdateDonationAsync(int id, DonationUpdateDTO updateDto)
+        {
+            var donation = await _unitOfWork.Donations.GetByIdAsync(id);
+            if (donation == null)
+            {
+                throw new KeyNotFoundException("Donación no encontrada.");
+            }
+
+            // Obtiene el monto original de la donación antes de la actualización
+            var originalAmount = donation.Amount;
+
+            // Actualiza la donación con los nuevos datos
+            _mapper.Map(updateDto, donation);
+
+            // Encuentra el proyecto relacionado
+            var project = await _unitOfWork.Projects.GetByIdAsync(donation.ProjectId);
+            if (project == null)
+            {
+                throw new InvalidOperationException("El proyecto asociado a la donación no existe.");
+            }
+
+            // Calcula la diferencia y ajusta el monto del proyecto
+            var amountDifference = donation.Amount - originalAmount;
+            project.AmountRaised += amountDifference;
+
+            await _unitOfWork.CompleteAsync();
+        }
+
+        
+        public async Task DeleteDonationAsync(int id)
+        {
+            // Encuentra la donación por su ID
+            var donation = await _unitOfWork.Donations.GetByIdAsync(id);
+            if (donation == null)
+            {
+                throw new KeyNotFoundException("Donación no encontrada.");
+            }
+
+            // Encuentra el proyecto relacionado
+            var project = await _unitOfWork.Projects.GetByIdAsync(donation.ProjectId);
+            if (project == null)
+            {
+                // Puedes lanzar una excepción si el proyecto no existe
+                throw new InvalidOperationException("El proyecto asociado a la donación no existe.");
+            }
+
+            // Resta el monto de la donación al monto total recaudado del proyecto
+            project.AmountRaised -= donation.Amount;
+
+
+            //  Elimina la donación
+            _unitOfWork.Donations.Delete(donation);
+
+            // Guarda todos los cambios de una vez
+            await _unitOfWork.CompleteAsync();
         }
     }
-
-    return NoContent();
-}
-
-
-[HttpDelete("{id}")]
-public async Task<IActionResult> DeleteDonacion(int id)
-{
-    var donacion = await _context.Donations.FindAsync(id);
-    if (donacion == null)
-    {
-        return NotFound();
-    }
-
-    _context.Donations.Remove(donacion);
-    await _context.SaveChangesAsync();
-
-    return NoContent();
-}
-
-private bool DonacionExists(int id)
-{
-    return _context.Donations.Any(e => e.Id == id);
 }

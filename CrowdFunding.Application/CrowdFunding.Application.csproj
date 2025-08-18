@@ -8,12 +8,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CrowdFunding.Domain\CrowdFunding.Domain.csproj" />
-    <ProjectReference Include="..\CrowdFunding.Infestructure\CrowdFunding.Infestructure.csproj" />
-    <ProjectReference Include="..\StudentsProyectsCRUD\StudentsProyectsCRUD.csproj" />
+    <ProjectReference Include="..\CrowdFunding.Infestructure\CrowdFunding.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Contract\" />
+    <PackageReference Include="AutoMapper" Version="15.0.1" />
   </ItemGroup>
 
 </Project>

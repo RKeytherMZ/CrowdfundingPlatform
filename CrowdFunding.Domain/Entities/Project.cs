@@ -18,10 +18,10 @@ namespace CrowdFunding.Domain.Entities
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
 
-        public string Status { get; set; } = "Active"; // Ej: "Active", "Completed", "Closed", "Canceled"
+        public string? Status { get; set; } = "Active"; // Ej: "Active", "Completed", "Closed", "Canceled"
 
-        public int StudentId { get; set; }
-        public Student Student { get; set; } = null!;
+        public ICollection<Student> Students { get; set; } = new List<Student>();
+
 
         public ICollection<Donation> Donations { get; set; } = new List<Donation>();
 

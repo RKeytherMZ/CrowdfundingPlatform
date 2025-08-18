@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj": {}
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj": {}
   },
   "projects": {
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj": {
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+        "projectUniqueName": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
         "projectName": "CrowdFunding.Application",
-        "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
+        "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\CrowdFunding.Application.csproj",
         "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-        "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Application\\obj\\",
+        "outputPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
+              "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
+                "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
               },
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj"
-              },
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj"
+              "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj": {
+                "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj"
               }
             }
           }
@@ -59,6 +56,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -79,14 +82,14 @@
         }
       }
     },
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+        "projectUniqueName": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
         "projectName": "CrowdFunding.Domain",
-        "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
+        "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj",
         "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-        "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\obj\\",
+        "outputPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -160,14 +163,14 @@
         }
       }
     },
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj": {
+    "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
-        "projectName": "CrowdFunding.Infestructure",
-        "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj",
+        "projectUniqueName": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj",
+        "projectName": "CrowdFunding.Infrastructure",
+        "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-        "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\obj\\",
+        "outputPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -188,8 +191,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
+              "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
+                "projectPath": "C:\\c# proyect\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
               }
             }
           }
@@ -241,109 +244,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
-        "projectName": "StudentsProyectsCRUD",
-        "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\StudentsProyectsCRUD.csproj",
-        "packagesPath": "C:\\Users\\vnt\\.nuget\\packages\\",
-        "outputPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\StudentsProyectsCRUD\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\vnt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
-            "projectReferences": {
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Domain\\CrowdFunding.Domain.csproj"
-              },
-              "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj": {
-                "projectPath": "C:\\c# proyect\\ProyectosITLA\\StudentsProyectsCRUD\\CrowdFunding.Infestructure\\CrowdFunding.Infestructure.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
-      },
-      "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[9.0.7, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[9.0.7, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[9.0.7, )"
-            },
-            "Microsoft.Extensions.Configuration.Binder": {
-              "target": "Package",
-              "version": "[9.0.7, )"
-            },
-            "Microsoft.Extensions.Configuration.Json": {
-              "target": "Package",
-              "version": "[9.0.7, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.6.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

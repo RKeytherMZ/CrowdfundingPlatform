@@ -9,11 +9,15 @@ namespace CrowdFunding.Application.DTOs.DonationDto
 {
     public class DonationCreateDto
     {
-        public string Donante { get; set; }
+        [Required(ErrorMessage = "Amount is required.")]
+        [Range(0.01, (double)decimal.MaxValue, ErrorMessage = "Donation amount must be positive.")]
+        public decimal Amount { get; set; }
 
-        [Range(1, double.MaxValue, ErrorMessage = "El monto debe ser mayor que cero.")]
-        public decimal Monto { get; set; }
-        public int ProyectoId { get; set; }
+        public string? DonorName { get; set; } 
+        public string? DonorEmail { get; set; } 
+
+        [Required(ErrorMessage = "Project ID is required.")]
+        public int ProjectId { get; set; }
 
     }
 }
